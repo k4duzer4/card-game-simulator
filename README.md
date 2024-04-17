@@ -1,18 +1,37 @@
-## Getting Started
+# Simulador de Jogo de Cartas 🃏
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é um simulador simples de jogo de cartas desenvolvido em Java, projetado para obter nota na disciplina Paradigmas de Linguagem de Computação.
 
-## Folder Structure
+## Linguagem Java e Componentes Utilizados 🖥️
 
-The workspace contains two folders by default, where:
+O projeto foi desenvolvido em Java, utilizando os seguintes componentes:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **Classes e Objetos**: Conceitos de programação orientada a objetos são utilizados extensivamente, com classes representando `Card` (Carta), `Deck` (Baralho), `Hand` (Mão) e `Player` (Jogador), cada uma responsável por funcionalidades específicas dentro do jogo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **ArrayList**: A classe `ArrayList` do pacote `java.util` é usada para armazenar e manipular coleções de cartas no baralho e nas mãos dos jogadores.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- **Random**: A classe `Random` do pacote `java.util` é usada para gerar números aleatórios para embaralhar e selecionar cartas do baralho.
 
-## Dependency Management
+- **Manipulação de Strings**: Técnicas de manipulação de strings são usadas para representar os naipes e valores das cartas, bem como para construir representações de strings de cartas e mãos.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Principais Recursos 🚀
+
+O simulador de jogo de cartas inclui os seguintes recursos principais:
+
+1. **Criação do Baralho**: A classe `Deck` é responsável por criar um baralho padrão de 52 cartas, composto por quatro naipes (Copas, Ouros, Paus, Espadas) e treze valores (2 a Ás).
+
+2. **Sorteio Aleatório de Cartas**: A classe `Deck` permite que os jogadores tirem uma carta aleatória do baralho, garantindo que cada carta seja tirada apenas uma vez.
+
+3. **Gerenciamento de Mão**: A classe `Hand` gerencia as cartas mantidas por cada jogador, permitindo que cartas sejam adicionadas e removidas da mão. O tamanho máximo da mão é personalizável.
+
+4. **Inicialização do Jogador**: A classe `Player` inicializa um jogador com uma mão de cartas tiradas do baralho.
+
+## Como Usar 📝
+
+1. Compile o código-fonte em um ambiente de desenvolvimento Java.
+
+2. Execute o programa resultante para iniciar o simulador de jogo de cartas.
+
+3. O programa criará automaticamente dois jogadores e exibirá suas mãos de cartas tiradas do baralho.
+
+4. Os jogadores podem visualizar suas mãos e participar do jogo com base nas regras do jogo de cartas sendo simulado.
